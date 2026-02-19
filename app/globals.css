@@ -1,26 +1,117 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+	--primary: #1c4d8d;
+	--primaryAccent: #4988c4;
+	--darkBlue: #0f2854;
+
+	--lightGray: #f0f2f3;
+	--lightGrayAccent: #dcdddf;
+
+	--darkGray: #2b2b2b;
+	--footerWhite: #fbfcfc;
+
+	--siteWidth: 1440px;
+	--navHeight: 88px;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+	--color-primary: var(--primary);
+	--color-darkBlue: var(--darkBlue);
+	--color-primaryAccent: var(--primaryAccent);
+	--color-lightGray: var(--lightGray);
+	--color-lightGrayAccent: var(--lightGrayAccent);
+
+	--color-darkGray: var(--darkGray);
+	--color-footerWhite: var(--footerWhite);
+
+	--font-roboto: var(--font-roboto);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::selection {
+	@apply bg-primary text-white;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	@apply text-3xl md:text-4xl lg:text-7xl font-bold leading-[1.2em];
+}
+
+h2 {
+	@apply text-2xl md:text-3xl lg:text-4xl font-bold leading-[1.4em];
+}
+
+h3 {
+	@apply text-xl md:text-2xl lg:text-3xl font-bold leading-[1.4em];
+}
+
+h4 {
+	@apply text-lg font-bold leading-[1.4em];
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+}
+
+section {
+	@apply py-16 sm:py-24 px-4 w-full flex justify-center;
+
+	.section-wrapper {
+		width: 100%;
+		max-width: var(--siteWidth);
+	}
+}
+
+button {
+	cursor: pointer;
+}
+
+/* NAVIGATION */
+
+#submenu {
+	&.open {
+		animation-name: submenuOpen;
+		animation-duration: 200ms;
+
+		animation-fill-mode: forwards;
+	}
+}
+
+@keyframes submenuOpen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* EMBLA */
+.embla__viewport {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.embla__container {
+	display: flex;
+	touch-action: pan-y pinch-zoom;
+	height: 100%;
+}
+
+.embla__slide {
+	flex: 0 0 100%;
+	min-width: 0;
+}
+
+/* HERO OVERLAY */
+.heroOverlay {
+	background-image: url('/HeroBackground.svg');
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
