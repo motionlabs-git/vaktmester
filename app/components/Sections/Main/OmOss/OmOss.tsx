@@ -16,7 +16,7 @@ const OmOss = () => {
 
 			<div className='absolute inset-0 right-0 flex justify-center pt-12'>
 				<div className='section-wrapper flex justify-end'>
-					<div className='bg-white shadow-[0_0_10px_1px] shadow-black/30 w-2xl h-fit p-10'>
+					<div className='whiteBox w-2xl h-fit p-10'>
 						<h3>Om oss</h3>
 
 						<p className='mt-6 text-darkGray'>

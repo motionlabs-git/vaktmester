@@ -7,11 +7,11 @@ const EmblaSlide = ({ title, text }: { title: string; text: string }) => {
 			<div className='w-full h-full relative'>
 				<div className='absolute w-full h-full inset-0 flex justify-start items-end '>
 					<div className='w-full pt-20 heroOverlay'>
-						<div className=' pl-[5vw] pb-[5vw] pt-10 max-w-9/10'>
-							<h1 className='text-white max-w-6/10 text-nowrap'>
+						<div className=' px-4 md:px-0 md:pl-[5vw] pb-20 md:pb-[5vw] md:pt-10 md:max-w-9/10'>
+							<h1 className='text-white max-w-6/10 md:text-nowrap'>
 								Vaktmester Bergen
 							</h1>
-							<p className='mt-4 text-xl text-white max-w-[50vw]'>
+							<p className='mt-4 text-xl text-white  md:max-w-[60vw] xl:max-w-[40vw]'>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Dolorum, cupiditate quo, est
 								eius eveniet eaque deleniti ratione quis ducimus
@@ -19,7 +19,7 @@ const EmblaSlide = ({ title, text }: { title: string; text: string }) => {
 								perspiciatis quae non praesentium nam.
 							</p>
 
-							<div className='flex gap-4 mt-6'>
+							<div className='flex gap-4 mt-6 flex-wrap'>
 								<Button
 									className='text-md'
 									text='Om oss'

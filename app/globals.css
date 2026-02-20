@@ -9,6 +9,7 @@
 	--lightGrayAccent: #dcdddf;
 
 	--darkGray: #2b2b2b;
+	--darkGrayAccent: #222222;
 	--footerWhite: #fbfcfc;
 
 	--siteWidth: 1440px;
@@ -23,6 +24,7 @@
 	--color-lightGrayAccent: var(--lightGrayAccent);
 
 	--color-darkGray: var(--darkGray);
+	--color-darkGrayAccent: var(--darkGrayAccent);
 	--color-footerWhite: var(--footerWhite);
 
 	--font-roboto: var(--font-roboto);
@@ -118,8 +120,19 @@ button {
 
 /* HERO OVERLAY */
 .heroOverlay {
-	background-image: url('/HeroBackground.svg');
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: contain;
+
+	@media (width >= 48rem) {
+		background-image: url('/HeroBackground_md.svg');
+	}
+
+	@media (width >= 80rem) {
+		background-image: url('/HeroBackground.svg');
+	}
+}
+
+.whiteBox {
+	@apply bg-white shadow-[0_0_10px_1px] shadow-black/30;
 }

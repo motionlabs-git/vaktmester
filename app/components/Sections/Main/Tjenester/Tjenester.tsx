@@ -7,7 +7,7 @@ const Tjenester = () => {
 			<div className='section-wrapper '>
 				<h2>Tjenester</h2>
 
-				<div className='mt-10 grid grid-cols-3 gap-10'>
+				<div className='mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-10'>
 					<TjenesterCard />
 					<TjenesterCard />
 					<TjenesterCard />

@@ -86,7 +86,7 @@ const Navigation = () => {
 					<Button
 						className={'text-sm hidden md:flex'}
 						text={'Kontakt oss'}
-						link={'/'}
+						link={'/kontakt-oss'}
 					/>
 				</div>
 			</nav>

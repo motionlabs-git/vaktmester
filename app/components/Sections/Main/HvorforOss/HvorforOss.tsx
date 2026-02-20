@@ -3,7 +3,7 @@ import { SealCheck } from '@gravity-ui/icons'
 const HvorforOss = () => {
 	return (
 		<section className='flex justify-center'>
-			<div className='section-wrapper flex gap-10'>
+			<div className='section-wrapper flex flex-col md:flex-row gap-10'>
 				<div className='flex-1'>
 					<h2>Hvorfor oss</h2>
 
@@ -19,7 +19,7 @@ const HvorforOss = () => {
 				<div className='flex-2'>
 					<h2>Hvorfor oss</h2>
 
-					<div className='flex gap-10'>
+					<div className='flex flex-col gap-0 sm:flex-row sm:gap-10'>
 						<div className='flex-1'>
 							<ul>
 								<li className='flex gap-4 mt-10'>

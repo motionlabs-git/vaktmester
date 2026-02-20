@@ -32,7 +32,7 @@ const Hero = () => {
 					</div>
 				</div>
 
-				<div className='absolute inset-0 flex justify-between items-center pointer-events-none px-4'>
+				<div className='absolute hidden inset-0 md:flex justify-between items-center pointer-events-none px-4'>
 					<button
 						onClick={goToPrev}
 						className='embla__prev group pointer-events-auto w-10 aspect-square bg-primary hover:bg-primaryAccent duration-200 text-white flex justify-center items-center'
