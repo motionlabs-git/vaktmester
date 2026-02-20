@@ -7,7 +7,7 @@ import NavLink from './NavLink'
 import NavLinkWithSubmenu from './NavLinkWithSubmenu'
 import HamburgerIcon from './HamburgerIcon'
 import Button from '../Global/Button'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import MobileNavigation from './MobileNavigation'
 
 const Navigation = () => {
