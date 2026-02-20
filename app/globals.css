@@ -136,3 +136,22 @@ button {
 .whiteBox {
 	@apply bg-white shadow-[0_0_10px_1px] shadow-black/30;
 }
+
+/* FORM */
+
+input[type='text'] {
+	@apply bg-white border border-darkGray outline-primary  px-4 py-2 sm:py-3;
+}
+
+textarea {
+	@apply bg-white border border-black outline-primary px-4 py-2 sm:py-3;
+}
+
+label {
+	@apply cursor-pointer;
+
+	&.required::after {
+		content: ' *';
+		color: red;
+	}
+}

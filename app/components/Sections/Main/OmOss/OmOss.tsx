@@ -4,7 +4,7 @@ import Image from 'next/image'
 const OmOss = () => {
 	return (
 		<section className='relative flex justify-center'>
-			<div className='w-full h-[80vh] pt-12'>
+			<div className='w-full h-[80vh] pt-40 sm:pt-20'>
 				<Image
 					src={'/testimg.jpg'}
 					alt={'testimg'}
@@ -14,7 +14,7 @@ const OmOss = () => {
 				/>
 			</div>
 
-			<div className='absolute inset-0 right-0 flex justify-center pt-12'>
+			<div className='absolute inset-0 right-0 flex justify-center pt-12 '>
 				<div className='section-wrapper flex justify-end'>
 					<div className='whiteBox w-2xl h-fit p-10'>
 						<h3>Om oss</h3>

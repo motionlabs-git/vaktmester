@@ -11,7 +11,6 @@ export default function Home() {
 			<Tjenester />
 			<OmOss />
 			<HvorforOss />
-
 			<FooterCTA />
 		</>
 	)
