@@ -1,3 +1,4 @@
+import FooterCTA from './components/Layout/FooterCTA'
 import Hero from './components/Sections/Main/Hero/Hero'
 import HvorforOss from './components/Sections/Main/HvorforOss/HvorforOss'
 import OmOss from './components/Sections/Main/OmOss/OmOss'
@@ -10,6 +11,8 @@ export default function Home() {
 			<Tjenester />
 			<OmOss />
 			<HvorforOss />
+
+			<FooterCTA />
 		</>
 	)
 }

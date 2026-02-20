@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Button from './components/Global/Button'
 
 export const metadata: Metadata = {
 	title: `Oi! Denne siden ble ikke funnet`,
@@ -62,6 +63,12 @@ const PageNotFound = () => {
 				<p className='mt-4'>
 					Beklager, men siden du leter etter ble ikke funnet.
 				</p>
+
+				<Button
+					className={'mt-10 text-lg'}
+					text={'Ga hjem'}
+					link={'/'}
+				/>
 			</div>
 		</section>
 	)

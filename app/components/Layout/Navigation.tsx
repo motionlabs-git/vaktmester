@@ -1,24 +1,54 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ChevronDown } from '@gravity-ui/icons'
 import { usePathname } from 'next/navigation'
 import { NavigationLinks } from '@/app/constants/navigationLinks'
 import NavLink from './NavLink'
 import NavLinkWithSubmenu from './NavLinkWithSubmenu'
 import HamburgerIcon from './HamburgerIcon'
 import Button from '../Global/Button'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import MobileNavigation from './MobileNavigation'
 
 const Navigation = () => {
 	const path = usePathname()
+	const [mobileNavigation, setMobileNavigation] = useState(false)
+	const mobileNavRef = useRef<null | HTMLElement>(null)
+
+	const openMobileNav = () => {
+		setMobileNavigation(true)
+
+		setTimeout(() => {
+			mobileNavRef.current?.classList.add('open')
+		}, 250)
+	}
+
+	const closeMobileNav = () => {
+		mobileNavRef.current?.classList.remove('open')
+
+		setTimeout(() => {
+			setMobileNavigation(true)
+		}, 250)
+	}
+
+	useEffect(() => {
+		closeMobileNav()
+	}, [path])
 
 	return (
 		<header className='w-full flex justify-center bg-lightGray shadow-2xl z-50'>
-			<nav className='max-w-[var(--siteWidth)] w-full px-4 items-center flex justify-between'>
+			{mobileNavigation && (
+				<MobileNavigation
+					ref={mobileNavRef}
+					handleClose={closeMobileNav}
+				/>
+			)}
+
+			<nav className='max-w-[var(--siteWidth)] w-full px-4 items-center gap-4 flex justify-between'>
 				<Link
 					href={'/'}
 					aria-label='Vaktmester Bergen - Main page'
-					className='w-60'
+					className='w-44 md:w-60'
 				>
 					<Image
 						src={'/brand/Plenklipperen_logo.png'}
@@ -51,19 +81,13 @@ const Navigation = () => {
 						)}
 					</ul>
 
-					<HamburgerIcon handleClick={() => null} />
+					<HamburgerIcon handleClick={openMobileNav} opened={false} />
 
 					<Button
 						className={'text-sm hidden md:flex'}
 						text={'Kontakt oss'}
 						link={'/'}
 					/>
-					{/* <Link
-						href={'/'}
-						className='hidden sm:block bg-primary text-white font-bold text-md py-4 px-8 hover:bg-primaryAccent duration-200 text-nowrap'
-					>
-						Kontakt oss
-					</Link> */}
 				</div>
 			</nav>
 		</header>

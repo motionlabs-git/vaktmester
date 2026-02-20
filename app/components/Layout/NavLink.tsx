@@ -12,7 +12,7 @@ const NavLink = ({
 	return (
 		<li className='flex items-center text-black hover:text-primaryAccent duration-200'>
 			<Link
-				className={`block h-full py-8 px-2 text-nowrap ${path === link ? 'text-primaryAccent' : ''}`}
+				className={`block h-full py-3 md:py-8 px-2 text-nowrap ${path === link ? 'text-primaryAccent' : ''}`}
 				href={link}
 			>
 				{text}

@@ -22,7 +22,7 @@ const Hero = () => {
 	const goToNext = () => emblaApi?.scrollNext()
 
 	return (
-		<section className='!px-0 !py-0 h-[calc(100vh-var(--navHeight))] bg-red-500'>
+		<section className='!px-0 !py-0 h-[calc(100vh-var(--navHeight))]'>
 			<div className='embla w-full h-full relative'>
 				<div className='embla__viewport' ref={emblaRef}>
 					<div className='embla__container'>
