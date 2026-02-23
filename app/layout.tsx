@@ -11,7 +11,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://gressservice.no'),
+	metadataBase: new URL('https://vaktmesterbergen.no'),
 	authors: [{ name: 'Motionlabs', url: 'https://motionlabs.cz' }],
 	title: {
 		default: `Vaktmester Bergen – Renhold og Vedlikehold av Bygg`,
