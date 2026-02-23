@@ -67,7 +67,7 @@ const Navigation = () => {
 									key={link.link}
 									text={link.text}
 									link={link.link}
-									path={path.split('/')[0]}
+									path={path}
 									submenu={link.subLinks}
 								/>
 							) : (

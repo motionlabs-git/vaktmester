@@ -11,13 +11,13 @@ const PageHeading = ({
 }) => {
 	return (
 		<section className='!py-0 !block h-[60vh]'>
-			<div className='h-3/4 w-full'>
+			<div className='h-3/4 w-full select-none'>
 				<Image
 					src={image}
 					alt={title}
 					width={1200}
 					height={1000}
-					className='w-full h-full object-cover'
+					className='w-full h-full object-cover '
 				/>
 			</div>
 

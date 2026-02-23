@@ -1,0 +1,119 @@
+import Button from '@/app/components/Global/Button'
+import ContactUs from '@/app/components/Global/ContactUs'
+import PageHeading from '@/app/components/Global/PageHeading'
+import { Contact } from '@/app/constants/contact'
+import { Metadata } from 'next'
+import { CircleArrowRightFill } from '@gravity-ui/icons'
+import Image from 'next/image'
+
+export const metadata: Metadata = {
+	title: ``,
+	description: '',
+}
+
+const page = () => {
+	return (
+		<>
+			<PageHeading
+				image={'/testimg.jpg'}
+				title={'Komplett eiendomsservice'}
+				text={
+					'Vi leverer komplett eiendomsservice i Bergen for borettslag, bedrifter og eiendomseiere. Tjenestene inkluderer regelmessig vedlikehold, tilsyn av bygg og skreddersydde serviceavtaler tilpasset kundens behov.'
+				}
+			/>
+
+			<section>
+				<div className='section-wrapper flex flex-col-reverse lg:flex-row-reverse gap-10'>
+					<div className='flex-1'>
+						<Image
+							src={'/testimg.jpg'}
+							alt={'testimg'}
+							width={800}
+							height={800}
+							className='object-cover w-full h-full aspect-square'
+						/>
+					</div>
+
+					<div className='flex-1'>
+						<h3>Omfang av tjenesten</h3>
+
+						<p className='mt-4 '>
+							Komplett eiendomsservice i Bergen innebærer
+							regelmessig tilsyn av bygg, vedlikehold av
+							fellesområder og oppfølging av eiendommens tekniske
+							tilstand.
+						</p>
+
+						<p className='mt-4 '>
+							Vi tilbyr skreddersydde vaktmesteravtaler som sikrer
+							stabil drift og langsiktig vedlikehold av borettslag
+							og næringseiendom.
+						</p>
+
+						<h4 className='mt-6'>Vår tilnærming til tjenesten</h4>
+						<ul className='text-lg mt-4'>
+							<li className='flex gap-2 items-center mt-4'>
+								<CircleArrowRightFill
+									className='text-primary'
+									width={20}
+									height={20}
+								/>
+								Regelmessig tilsyn av bygg
+							</li>
+							<li className='flex gap-2 items-center mt-4'>
+								<CircleArrowRightFill
+									className='text-primary'
+									width={20}
+									height={20}
+								/>{' '}
+								Planlagt vedlikehold
+							</li>
+							<li className='flex gap-2 items-center mt-4'>
+								<CircleArrowRightFill
+									className='text-primary'
+									width={20}
+									height={20}
+								/>{' '}
+								Serviceavtaler
+							</li>
+							<li className='flex gap-2 items-center mt-4'>
+								<CircleArrowRightFill
+									className='text-primary'
+									width={20}
+									height={20}
+								/>{' '}
+								Oppfølging av eiendom
+							</li>
+							<li className='flex gap-2 items-center mt-4'>
+								<CircleArrowRightFill
+									className='text-primary'
+									width={20}
+									height={20}
+								/>{' '}
+								Helhetlig vaktmester service
+							</li>
+						</ul>
+
+						<div className='flex gap-4 flex-wrap mt-10'>
+							<Button
+								className={'text-base md:text-lg'}
+								text={Contact.phone}
+								link={`tel:${Contact.phone}`}
+							/>
+
+							<Button
+								className={'text-base md:text-lg'}
+								text={Contact.mail}
+								link={`mailto:${Contact.mail}`}
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<ContactUs />
+		</>
+	)
+}
+
+export default page

@@ -5,6 +5,7 @@ import ContactForm from '../components/Sections/KontaktOss/ContactForm'
 import { Envelope, Handset, House } from '@gravity-ui/icons'
 import { Contact } from '../constants/contact'
 import Link from 'next/link'
+import ContactUs from '../components/Global/ContactUs'
 
 export const metadata: Metadata = {
 	title: ``,
@@ -15,14 +16,12 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/team2.jpg'}
 				title={'Kontakt oss'}
 				text={
-					'lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl  j'
+					'Har du spørsmål eller ønsker et uforpliktende tilbud på vaktmestertjenester i Bergen? Ta gjerne kontakt med oss for en hyggelig og rask tilbakemelding.'
 				}
 			/>
-
-			{/* <ContactOss /> */}
 
 			<section>
 				<div className='section-wrapper '>
@@ -75,31 +74,7 @@ const page = () => {
 				</div>
 			</section>
 
-			<section className='relative flex-col md:flex-row flex justify-center w-full md:mt-12 !py-0 md:pb-16'>
-				<div className='section-wrapper justify-center flex gap-20 relative z-10 '>
-					<div className='flex-1 hidden md:block '></div>
-					<div className='flex-1 md:pb-16'>
-						<h3>
-							Ønsker du en samarbeidspartner som er solid og til å
-							stole på?
-						</h3>
-
-						<div className='mt-10 whiteBox p-10 '>
-							<ContactForm />
-						</div>
-					</div>
-				</div>
-
-				<div className='md:absolute md:inset-0 w-full h-full mt-12 md:mt-0'>
-					<Image
-						src={'/images/house_cleaning.png'}
-						alt={'test'}
-						width={1200}
-						height={1000}
-						className='w-full h-full object-cover object-top user-select-none'
-					/>
-				</div>
-			</section>
+			<ContactUs />
 		</>
 	)
 }

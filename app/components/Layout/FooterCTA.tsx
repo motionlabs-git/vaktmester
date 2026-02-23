@@ -11,8 +11,10 @@ const FooterCTA = () => {
 						stole på?
 					</h3>
 					<p className='mt-4'>
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Commodi officia, voluptatum quaerat consequuntu
+						Vi tilbyr vaktmestertjenester og eiendomsservice i
+						Bergen for borettslag, sameier og næringsbygg, med fokus
+						på stabil drift og jevnlig vedlikehold av eiendom
+						gjennom hele året.
 					</p>
 				</div>
 
@@ -21,7 +23,7 @@ const FooterCTA = () => {
 						'text-lg border border-white !bg-darkBlue hover:!bg-primary'
 					}
 					text={'Kontakt oss'}
-					link={'/'}
+					link={'/kontakt-oss'}
 				/>
 			</div>
 		</div>

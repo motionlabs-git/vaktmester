@@ -40,7 +40,7 @@ const NavLinkWithSubmenu = ({
 			className='group relative flex items-center text-blackduration-200'
 		>
 			<Link
-				className={` h-full py-8 px-2 flex items-center gap-1 hover:text-primaryAccent  ${path === link ? 'text-primaryAccent' : ''}`}
+				className={`h-full py-8 px-2 flex items-center gap-1 hover:text-primaryAccent  ${path === link ? 'text-primaryAccent' : 'text-black'}`}
 				href={link}
 			>
 				{text}{' '}
@@ -51,15 +51,15 @@ const NavLinkWithSubmenu = ({
 				<div
 					ref={submenuRef}
 					id='submenu'
-					className='absolute close left-1/2 -translate-x-1/2 top-full bg-lightGray shadow-2xl px-8 p-4 z-50'
+					className='absolute close w-80 left-1/2 -translate-x-1/2 top-full bg-lightGray shadow-2xl px-8 p-4 z-50 border-b-2 border-primary'
 				>
 					<ul>
-						{submenu.map((link) => (
+						{submenu.map((i) => (
 							<li
-								key={link.link}
-								className='py-2 hover:text-primaryAccent duration-200'
+								key={i.link}
+								className={`py-2 hover:text-primaryAccent duration-200 w-fit ${i.link === path ? 'text-primary' : 'text-black'}`}
 							>
-								<Link href={link.link}>{link.title}</Link>
+								<Link href={i.link}>{i.title}</Link>
 							</li>
 						))}
 					</ul>

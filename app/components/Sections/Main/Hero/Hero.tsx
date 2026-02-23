@@ -1,6 +1,5 @@
 'use client'
 import useEmblaCarousel from 'embla-carousel-react'
-import Image from 'next/image'
 import Autoplay from 'embla-carousel-autoplay'
 import { useEffect } from 'react'
 import EmblaSlide from './EmblaSlide'
@@ -26,9 +25,30 @@ const Hero = () => {
 			<div className='embla w-full h-full relative'>
 				<div className='embla__viewport' ref={emblaRef}>
 					<div className='embla__container'>
-						<EmblaSlide title={''} text={''} />
-						<EmblaSlide title={''} text={''} />
-						<EmblaSlide title={''} text={''} />
+						<EmblaSlide
+							title={'Vaktmester Bergen'}
+							text={'Hero text 1'}
+							image={'/images/vaktmester_bergen_roof_check.jpg'}
+							link={'/tjenester/teknisk-vedlikehold-av-bygg'}
+						/>
+						<EmblaSlide
+							title={'Vaktmester Bergen'}
+							text={'Hero text 1'}
+							image={'/images/vaktmester_window_cleaning.jpeg'}
+							link={'/tjenester/renhold-og-rengjoring-av-bygg'}
+						/>
+						<EmblaSlide
+							title={'Vaktmester Bergen'}
+							text={'Hero text 2'}
+							image={'/images/vaktmester_bergen_hoytrikking.jpeg'}
+							link={'/tjenester/utendors-vedlikehold-av-eiendom'}
+						/>
+						<EmblaSlide
+							title={'Vaktmester Bergen'}
+							text={'Hero text 1'}
+							image={'/images/trefelling.jpg'}
+							link={'/tjenester/komplett-eiendomsservice'}
+						/>
 					</div>
 				</div>
 

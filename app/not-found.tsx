@@ -66,7 +66,7 @@ const PageNotFound = () => {
 
 				<Button
 					className={'mt-10 text-lg'}
-					text={'Ga hjem'}
+					text={'Gå hjem'}
 					link={'/'}
 				/>
 			</div>

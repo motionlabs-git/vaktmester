@@ -1,7 +1,17 @@
 import Button from '@/app/components/Global/Button'
 import Image from 'next/image'
 import Link from 'next/link'
-const EmblaSlide = ({ title, text }: { title: string; text: string }) => {
+const EmblaSlide = ({
+	title,
+	text,
+	image,
+	link,
+}: {
+	title: string
+	text: string
+	image: string
+	link: string
+}) => {
 	return (
 		<div className='embla__slide'>
 			<div className='w-full h-full relative'>
@@ -9,27 +19,23 @@ const EmblaSlide = ({ title, text }: { title: string; text: string }) => {
 					<div className='w-full pt-20 heroOverlay'>
 						<div className=' px-4 md:px-0 md:pl-[5vw] pb-20 md:pb-[5vw] md:pt-10 md:max-w-9/10'>
 							<h1 className='text-white max-w-6/10 md:text-nowrap'>
-								Vaktmester Bergen
+								{title}
 							</h1>
 							<p className='mt-4 text-xl text-white  md:max-w-[60vw] xl:max-w-[40vw]'>
-								Lorem ipsum dolor sit amet consectetur
-								adipisicing elit. Dolorum, cupiditate quo, est
-								eius eveniet eaque deleniti ratione quis ducimus
-								mollitia totam porro veniam inventore placeat
-								perspiciatis quae non praesentium nam.
+								{text}
 							</p>
 
 							<div className='flex gap-4 mt-6 flex-wrap'>
 								<Button
 									className='text-md'
-									text='Om oss'
-									link='/'
+									text='Ga til tjeneste'
+									link={link}
 								/>
 
 								<Button
 									className='text-md'
 									text='Kontakt oss'
-									link='/'
+									link='/kontakt-oss'
 								/>
 							</div>
 						</div>
@@ -37,8 +43,8 @@ const EmblaSlide = ({ title, text }: { title: string; text: string }) => {
 				</div>
 
 				<Image
-					src={'/testimg.jpg'}
-					alt={'testimg'}
+					src={image}
+					alt={'Bilde ' + title}
 					width={2000}
 					height={1200}
 					className='w-full h-full object-cover user-select-none'
