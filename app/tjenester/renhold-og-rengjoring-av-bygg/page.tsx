@@ -5,10 +5,12 @@ import { Contact } from '@/app/constants/contact'
 import { Metadata } from 'next'
 import { CircleArrowRightFill } from '@gravity-ui/icons'
 import Image from 'next/image'
+import Tjenester from '@/app/components/Sections/Main/Tjenester/Tjenester'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Renhold av bygg i Bergen - Fasadevask og rengjøring`,
+	description:
+		'Profesjonell rengjøring av bygg i Bergen inkludert fasadevask, trapperom og fellesområder. Renholdstjenester for borettslag, sameier og næringsbygg i Bergen.',
 }
 
 const page = () => {
@@ -114,6 +116,11 @@ const page = () => {
 					</div>
 				</div>
 			</section>
+
+			<Tjenester
+				title='Andre relevante tjenester'
+				deny='/tjenester/renhold-og-rengjoring-av-bygg'
+			/>
 
 			<ContactUs />
 		</>

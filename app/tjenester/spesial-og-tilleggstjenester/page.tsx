@@ -5,6 +5,7 @@ import { Contact } from '@/app/constants/contact'
 import { Metadata } from 'next'
 import { CircleArrowRightFill } from '@gravity-ui/icons'
 import Image from 'next/image'
+import Tjenester from '@/app/components/Sections/Main/Tjenester/Tjenester'
 
 export const metadata: Metadata = {
 	title: ``,
@@ -110,6 +111,10 @@ const page = () => {
 				</div>
 			</section>
 
+			<Tjenester
+				title='Andre relevante tjenester'
+				deny='/tjenester/spesial-og-tilleggstjenester'
+			/>
 			<ContactUs />
 		</>
 	)

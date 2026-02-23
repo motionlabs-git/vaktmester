@@ -6,8 +6,9 @@ import { ServicesLinks } from '../constants/navigationLinks'
 import ContactUs from '../components/Global/ContactUs'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Tjenester innen renhold, vedlikehold av bygg og eiendomsservice i Bergen`,
+	description:
+		'Vi tilbyr profesjonelle vaktmestertjenester i Bergen inkludert renhold av bygg, teknisk vedlikehold, utendørs vedlikehold og snørydding. Skredderssydd eiendomsservice for borettslag, sameier og næringseiendom i Bergen.',
 }
 
 const page = () => {

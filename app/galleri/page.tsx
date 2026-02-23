@@ -3,8 +3,9 @@ import Gallery from '../components/Sections/Gallery/Gallery'
 import PageHeading from '../components/Global/PageHeading'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Galleri | Utførte Oppdrag og Referanser`,
+	description:
+		'Se bilder fra våre utførte oppdrag innen renhold av bygg, fasadevask, snørydding og eiendomsservice i Bergen. Vaktmester Bergen leverer pålitelige tjenester til borettslag, sameier og næringseiendom.',
 }
 
 const page = () => {
@@ -14,7 +15,7 @@ const page = () => {
 				image={'/testimg.jpg'}
 				title={'Galleri av vårt arbeid'}
 				text={
-					'lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl lasdjflaksdjflk ldsaj fljadslk jlasdj lfjasdl  j lasdjflaksdjflk lk jlasdj lfjasdl  j'
+					'Se bilder fra våre utførte oppdrag innen renhold av bygg, fasadevask, snørydding og eiendomsservice i Bergen. Vaktmester Bergen leverer pålitelige tjenester til borettslag, sameier og næringseiendom.'
 				}
 			/>
 

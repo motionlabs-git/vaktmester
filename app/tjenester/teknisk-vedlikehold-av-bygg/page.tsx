@@ -5,10 +5,12 @@ import { Contact } from '@/app/constants/contact'
 import { Metadata } from 'next'
 import { CircleArrowRightFill } from '@gravity-ui/icons'
 import Image from 'next/image'
+import Tjenester from '@/app/components/Sections/Main/Tjenester/Tjenester'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Teknisk vedlikehold av bygg i Bergen`,
+	description:
+		'Teknisk vedlikehold av bygg i Bergen med inspeksjon, mindre reparasjoner og service av takrenner, dører og installasjoner for stabil drift av eiendom.',
 }
 
 const page = () => {
@@ -109,6 +111,11 @@ const page = () => {
 					</div>
 				</div>
 			</section>
+
+			<Tjenester
+				title='Andre relevante tjenester'
+				deny='/tjenester/teknisk-vedlikehold-av-bygg'
+			/>
 
 			<ContactUs />
 		</>

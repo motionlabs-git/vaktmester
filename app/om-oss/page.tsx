@@ -7,8 +7,9 @@ import { Contact } from '../constants/contact'
 import HvorforOss from '../components/Sections/Main/HvorforOss/HvorforOss'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Om oss | Profesjonell Drift, Renhold og Eiendomsservice`,
+	description:
+		'Vaktmestertjenester i Bergen – renhold, teknisk vedlikehold, uteområder og snørydding for borettslag og næringseiendom.',
 }
 
 const page = () => {

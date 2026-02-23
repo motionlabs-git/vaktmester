@@ -8,8 +8,9 @@ import Link from 'next/link'
 import ContactUs from '../components/Global/ContactUs'
 
 export const metadata: Metadata = {
-	title: ``,
-	description: '',
+	title: `Kontakt oss | Renhold og Eiendomsservice`,
+	description:
+		'Kontakt Vaktmester Bergen for profesjonelle vaktmestertjenester, renhold av bygg, snørydding og vedlikehold av eiendom i Bergen. Vi tilbyr skreddersydde løsninger for borettslag, sameier og næringseiendom.',
 }
 
 const page = () => {
