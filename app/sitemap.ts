@@ -1,5 +1,5 @@
 const sitemap = () => {
-	const baseURL = 'https://vaktmesterbergen.no'
+	const baseURL = 'https://www.vaktmesterbergen.no'
 
 	return [
 		{
