@@ -30,6 +30,7 @@ const Hero = () => {
 							text={'Hero text 1'}
 							image={'/images/vaktmester_bergen_roof_check.jpg'}
 							link={'/tjenester/teknisk-vedlikehold-av-bygg'}
+							h1
 						/>
 						<EmblaSlide
 							title={'Vaktmester Bergen'}

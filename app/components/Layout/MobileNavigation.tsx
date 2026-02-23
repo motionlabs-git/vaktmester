@@ -60,7 +60,7 @@ const MobileNavigation = ({
 					<Button
 						className={'text-base mt-4'}
 						text={'Kontakt oss'}
-						link={'/'}
+						link={'/kontakt-oss'}
 					/>
 				</div>
 				<div className='flex gap-2 text-white'>
