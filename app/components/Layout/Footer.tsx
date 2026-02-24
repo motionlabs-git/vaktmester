@@ -33,9 +33,19 @@ const Footer = () => {
 
 						<div>
 							<p className='font-bold'>
-								Vaktmester Bergen fra Plenklipperen.no AS
+								Vaktmester Bergen fra{' '}
+								<Link
+									target='_blank'
+									href={'https://gressservice.no/'}
+								>
+									Plenklipperen.no AS
+								</Link>
 							</p>
 
+							<p className='mt-2'>
+								Trenger eiendommen også vedlikehold av
+								uteområder?
+							</p>
 							<Button
 								blank
 								text={'Se plenklipperen'}

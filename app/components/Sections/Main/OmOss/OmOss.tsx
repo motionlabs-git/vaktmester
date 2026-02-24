@@ -1,5 +1,6 @@
 import Button from '@/app/components/Global/Button'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const OmOss = () => {
 	return (
@@ -36,17 +37,32 @@ const OmOss = () => {
 							hagevedlikehold i Bergen som en del av vår
 							eiendomsservice. For kunder som har behov for mer
 							omfattende plenklipping, hekkeklipping og komplett
-							hageservice, henviser vi til vårt spesialiserte
-							nettsted for hagetjenester, hvor du finner mer
-							informasjon om våre dedikerte løsninger innen grønt
-							vedlikehold i Bergen.
+							hageservice, henviser vi til vårt{' '}
+							<Link
+								href={'https://www.gressservice.no/'}
+								target='_blank'
+								className='text-primary'
+							>
+								spesialiserte nettsted forhagetjenester
+							</Link>
+							, hvor du finner mer informasjon om våre dedikerte
+							løsninger innen grønt vedlikehold i Bergen.
 						</p>
 
-						<Button
-							className={'text-base mt-6'}
-							text={'Les om oss'}
-							link={'/om-oss'}
-						/>
+						<div className='mt-6 flex gap-2'>
+							<Button
+								className={'text-base'}
+								text={'Les om oss'}
+								link={'/om-oss'}
+							/>
+
+							<Button
+								className={'text-base'}
+								text={'Hagetjenester'}
+								link={'https://www.gressservice.no/'}
+								blank
+							/>
+						</div>
 					</div>
 				</div>
 			</div>
