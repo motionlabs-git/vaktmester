@@ -17,7 +17,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/pantalek.jpg'}
 				title={'Utendørs vedlikehold av eiendom'}
 				text={
 					'Vi tar oss av uteområdene rundt eiendommen din i Bergen slik at de forblir ryddige, trygge og velstelte gjennom hele sesongen. Vi utfører vedlikehold av gangveier, uteplasser og områder rundt bygninger med fokus på kvalitet og langsiktig vedlikehold.'
@@ -28,8 +28,8 @@ const page = () => {
 				<div className='section-wrapper flex flex-col-reverse lg:flex-row-reverse gap-10'>
 					<div className='flex-1'>
 						<Image
-							src={'/testimg.jpg'}
-							alt={'testimg'}
+							src={'/images/bushes2.jpg'}
+							alt={'Vaktmester Bergen - Buske'}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full aspect-square'

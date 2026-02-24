@@ -16,7 +16,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/hoytrikking.jpg'}
 				title={'Spesial og tilleggstjenester'}
 				text={
 					'Vi tilbyr også fleksible spesialtjenester og enkeltoppdrag i Bergen basert på kundens behov. Vi kan raskt tilpasse oss ulike situasjoner og levere effektive løsninger både ved planlagte oppdrag og akutte behov.'
@@ -27,8 +27,10 @@ const page = () => {
 				<div className='section-wrapper flex flex-col-reverse lg:flex-row-reverse gap-10'>
 					<div className='flex-1'>
 						<Image
-							src={'/testimg.jpg'}
-							alt={'testimg'}
+							src={'/images/roof_repair_2.jpg'}
+							alt={
+								'Vaktmester Bergen - Spesial og tilleggstjenester'
+							}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full aspect-square'

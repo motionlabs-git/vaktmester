@@ -12,7 +12,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/cars.jpg'}
 				title={'Galleri av vårt arbeid'}
 				text={
 					'Se bilder fra våre utførte oppdrag innen renhold av bygg, fasadevask, snørydding og eiendomsservice i Bergen. Vaktmester Bergen leverer pålitelige tjenester til borettslag, sameier og næringseiendom.'

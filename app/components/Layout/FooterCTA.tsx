@@ -20,7 +20,7 @@ const FooterCTA = () => {
 
 				<Button
 					className={
-						'text-lg border border-white !bg-darkBlue hover:!bg-primary'
+						'text-base md:text-lg border border-white !bg-darkBlue hover:!bg-primary'
 					}
 					text={'Kontakt oss'}
 					link={'/kontakt-oss'}

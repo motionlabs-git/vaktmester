@@ -3,9 +3,10 @@ import { NavigationLinks } from '@/app/constants/navigationLinks'
 import { Contact } from '@/app/constants/contact'
 import Image from 'next/image'
 import Link from 'next/link'
-import { EnvelopeOpen, Smartphone, MapPin } from '@gravity-ui/icons'
+import { EnvelopeOpen, Smartphone, MapPin, House } from '@gravity-ui/icons'
 import { usePathname } from 'next/navigation'
 import FooterLink from './FooterLink'
+import Button from '../Global/Button'
 
 const Footer = () => {
 	const path = usePathname()
@@ -32,8 +33,15 @@ const Footer = () => {
 
 						<div>
 							<p className='font-bold'>
-								Vaktmester Bergen - Plenkliperen
+								Vaktmester Bergen fra Plenkliperen
 							</p>
+
+							<Button
+								blank
+								text={'Se plenklipperen'}
+								className='text-sm mt-4'
+								link={'https://gressservice.no/'}
+							/>
 						</div>
 					</div>
 
@@ -62,7 +70,7 @@ const Footer = () => {
 									href={Contact.addressLink}
 									target='_blank'
 								>
-									<EnvelopeOpen /> {Contact.address}
+									<MapPin /> {Contact.address}
 								</Link>
 							</li>
 						</ul>

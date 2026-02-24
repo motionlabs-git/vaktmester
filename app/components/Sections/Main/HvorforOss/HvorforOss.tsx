@@ -10,15 +10,21 @@ const HvorforOss = () => {
 					<p className='mt-10'>
 						Vi tilbyr profesjonelle vaktmestertjenester og
 						eiendomsservice i Bergen tilpasset borettslag, sameier,
-						næringsbygg og private eiendommer. Med fokus på
-						kvalitet, fleksibilitet og langsiktig vedlikehold sørger
-						vi for at eiendommen din fungerer optimalt gjennom hele
-						året – både innendørs og utendørs.
+						næringsbygg og private eiendommer. Vi arbeider blant
+						annet med eiendommer i Fana, Åsane, Askøy, Sandsli og
+						Sandviken, samt vedlikehold av næringslokaler som KIWI
+						butikker i Bergen.
+					</p>
+
+					<p className='mt-4'>
+						Med fokus på kvalitet, fleksibilitet og langsiktig
+						vedlikehold sørger vi for at eiendommen din fungerer
+						optimalt gjennom hele året – både innendørs og utendørs.
 					</p>
 				</div>
 
 				<div className='flex-2'>
-					<h2>Dine fordeler med vår eiendomsservice</h2>
+					<h3>Dine fordeler med vår eiendomsservice</h3>
 
 					<div className='flex flex-col gap-0 sm:flex-row sm:gap-10'>
 						<div className='flex-1'>

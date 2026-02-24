@@ -7,7 +7,7 @@ import { ChevronLeft, ChevronRight } from '@gravity-ui/icons'
 
 const Hero = () => {
 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-		Autoplay({ delay: 5000 }),
+		Autoplay({ delay: 5000, stopOnInteraction: false }),
 	])
 
 	useEffect(() => {
@@ -21,34 +21,52 @@ const Hero = () => {
 	const goToNext = () => emblaApi?.scrollNext()
 
 	return (
-		<section className='!px-0 !py-0 h-[calc(100vh-var(--navHeight))]'>
+		<section className='!px-0 !py-0 h-[calc(100dvh-var(--navHeight))]'>
 			<div className='embla w-full h-full relative'>
 				<div className='embla__viewport' ref={emblaRef}>
 					<div className='embla__container'>
 						<EmblaSlide
 							title={'Vaktmester Bergen'}
-							text={'Hero text 1'}
+							text={
+								'Vi følger opp eiendommer og uteområder i Fana, Åsane og Askøy med regelmessig tilsyn og vedlikehold.'
+							}
 							image={'/images/vaktmester_bergen_roof_check.jpg'}
-							link={'/tjenester/teknisk-vedlikehold-av-bygg'}
+							link={'/tjenester/komplett-eiendomsservice'}
 							h1
 						/>
 						<EmblaSlide
-							title={'Vaktmester Bergen'}
-							text={'Hero text 1'}
-							image={'/images/vaktmester_window_cleaning.jpeg'}
-							link={'/tjenester/renhold-og-rengjoring-av-bygg'}
-						/>
-						<EmblaSlide
-							title={'Vaktmester Bergen'}
-							text={'Hero text 2'}
-							image={'/images/vaktmester_bergen_hoytrikking.jpeg'}
+							title={'Butikkvedlikehold'}
+							text={
+								'Vi sørger for løpende vedlikehold av næringseiendom og dagligvarebutikker som KIWI i Bergen og Sandsli.'
+							}
+							image={'/images/vaktmester_window_cleaning.jpg'}
 							link={'/tjenester/utendors-vedlikehold-av-eiendom'}
 						/>
 						<EmblaSlide
-							title={'Vaktmester Bergen'}
-							text={'Hero text 1'}
+							title={'Uteområder i orden'}
+							text={
+								'Vedlikehold av grøntarealer og eiendommer i Bergen sentrum, Askøy og omkringliggende bydeler.'
+							}
 							image={'/images/trefelling.jpg'}
-							link={'/tjenester/komplett-eiendomsservice'}
+							link={'/tjenester/utendors-vedlikehold-av-eiendom'}
+						/>
+
+						<EmblaSlide
+							title={'Teknisk drift'}
+							text={
+								'Teknisk oppfølging og serviceoppdrag på bygg i Fana og Sandsli gjennom hele året.'
+							}
+							image={'/images/jerry_bulb_change.jpg'}
+							link={'/tjenester/teknisk-vedlikehold-av-bygg'}
+						/>
+
+						<EmblaSlide
+							title={'Eiendomsvedlikehold'}
+							text={
+								'Regelmessig renhold og utvendig vedlikehold av eiendommer i Sandsli og Sandviken.'
+							}
+							image={'/images/vaktmester_house_cleaning.jpeg'}
+							link={'/tjenester/renhold-og-rengjoring-av-bygg'}
 						/>
 					</div>
 				</div>

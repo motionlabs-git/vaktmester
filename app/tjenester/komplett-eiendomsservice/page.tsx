@@ -17,7 +17,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/vaktmester_bergen_roof_check.jpg'}
 				title={'Komplett eiendomsservice'}
 				text={
 					'Vi leverer komplett eiendomsservice i Bergen for borettslag, bedrifter og eiendomseiere. Tjenestene inkluderer regelmessig vedlikehold, tilsyn av bygg og skreddersydde serviceavtaler tilpasset kundens behov.'
@@ -28,8 +28,8 @@ const page = () => {
 				<div className='section-wrapper flex flex-col-reverse lg:flex-row-reverse gap-10'>
 					<div className='flex-1'>
 						<Image
-							src={'/testimg.jpg'}
-							alt={'testimg'}
+							src={'/images/teknisk-vedlikehold.jpeg'}
+							alt={'Vaktmester Bergen - Teknisk vedlikehold'}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full aspect-square'
@@ -43,13 +43,14 @@ const page = () => {
 							Komplett eiendomsservice i Bergen innebærer
 							regelmessig tilsyn av bygg, vedlikehold av
 							fellesområder og oppfølging av eiendommens tekniske
-							tilstand.
+							tilstand. Vi utfører slike tjenester blant annet i
+							Bergen Fana, Sandsli og nærliggende områder.
 						</p>
 
 						<p className='mt-4 '>
 							Vi tilbyr skreddersydde vaktmesteravtaler som sikrer
 							stabil drift og langsiktig vedlikehold av borettslag
-							og næringseiendom.
+							og næringseiendom i hele Bergen-regionen.
 						</p>
 
 						<h4 className='mt-6'>Vår tilnærming til tjenesten</h4>

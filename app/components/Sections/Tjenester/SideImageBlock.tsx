@@ -21,7 +21,7 @@ const SideImageBlock = ({
 			<div className='flex-1'>
 				<Image
 					src={image}
-					alt={'testimg'}
+					alt={title}
 					width={800}
 					height={800}
 					className='object-cover w-full h-full'

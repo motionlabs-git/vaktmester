@@ -17,7 +17,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/vaktmester_bergen_hoytrikking2.jpeg'}
 				title={'Renhold og rengjøring av bygg'}
 				text={
 					'Vi tilbyr profesjonell rengjøring av bygg i Bergen for borettslag, bedrifter og private eiendommer. Vi sørger for grundig vask av fasader, inngangspartier og fellesområder slik at eiendommen fremstår ren, representativ og godt vedlikeholdt gjennom hele året.'
@@ -28,8 +28,10 @@ const page = () => {
 				<div className='section-wrapper flex flex-col-reverse lg:flex-row-reverse gap-10'>
 					<div className='flex-1'>
 						<Image
-							src={'/testimg.jpg'}
-							alt={'testimg'}
+							src={'/images/building_cleaning.jpg'}
+							alt={
+								'Vaktmester Bergen - Renhold og rengjøring av bygg'
+							}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full aspect-square'

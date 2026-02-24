@@ -15,7 +15,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/testimg.jpg'}
+				image={'/images/building_cleaning.jpg'}
 				title={'Tjenester'}
 				text={
 					'Vi tilbyr et bredt spekter av vaktmestertjenester og eiendomsvedlikehold i Bergen for borettslag, bedrifter og private eiendommer. Våre tjenester inkluderer renhold av bygg, utendørs vedlikehold, teknisk service og komplett eiendomsservice – alt tilpasset dine behov for trygg drift og et velholdt bygg gjennom hele året.'

@@ -16,7 +16,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/images/boys_working.jpeg'}
+				image={'/images/boys_working.jpg'}
 				title={'Om oss'}
 				text={
 					'Vi tilbyr profesjonelle vaktmestertjenester og eiendomsservice i Bergen for borettslag, bedrifter og private eiendommer.'
@@ -27,8 +27,8 @@ const page = () => {
 				<div className='section-wrapper flex flex-col lg:flex-row gap-10'>
 					<div className='flex-1'>
 						<Image
-							src={'/images/team.jpeg'}
-							alt={'testimg'}
+							src={'/images/team.jpg'}
+							alt={'Om Vaktmester Bergen - Plenklipperen'}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full '
@@ -79,13 +79,13 @@ const page = () => {
 
 						<div className='flex gap-4 flex-wrap mt-10'>
 							<Button
-								className={'text-lg'}
+								className={'text-base md:text-lg'}
 								text={Contact.phone}
 								link={`tel:${Contact.phone}`}
 							/>
 
 							<Button
-								className={'text-lg'}
+								className={'text-base md:text-lg'}
 								text={Contact.mail}
 								link={`mailto:${Contact.mail}`}
 							/>

@@ -66,7 +66,7 @@ const PageNotFound = () => {
 				</p>
 
 				<Button
-					className={'mt-10 text-lg'}
+					className={'mt-10 text-base md:text-lg'}
 					text={'Gå hjem'}
 					link={'/'}
 				/>

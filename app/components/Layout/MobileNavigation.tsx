@@ -4,7 +4,7 @@ import HamburgerIcon from './HamburgerIcon'
 import { NavigationLinks } from '@/app/constants/navigationLinks'
 import NavLink from './NavLink'
 import { usePathname } from 'next/navigation'
-import { RefObject, useLayoutEffect } from 'react'
+import React, { RefObject, useLayoutEffect } from 'react'
 import Button from '../Global/Button'
 import FeatherIcon from 'feather-icons-react'
 import Icon from '../Global/Icon'
@@ -47,14 +47,38 @@ const MobileNavigation = ({
 			<div className='mt-10 flex-1 flex flex-col justify-between h-full'>
 				<div>
 					<ul className='items-center font-bold text-xl'>
-						{NavigationLinks.slice(0, -1).map((link) => (
-							<NavLink
-								key={link.link}
-								text={link.text}
-								link={link.link}
-								path={path}
-							/>
-						))}
+						{NavigationLinks.slice(0, -1).map((link) =>
+							link.subLinks ? (
+								<React.Fragment key={link.link}>
+									<NavLink
+										text={link.text}
+										link={link.link}
+										path={path}
+									/>
+									<ul className='pl-10'>
+										{link.subLinks.map((sublink) => (
+											<Link
+												key={sublink.link}
+												aria-label={
+													'Link to ' + sublink.title
+												}
+												className='py-2 text-base block'
+												href={sublink.link}
+											>
+												<li>{sublink.title}</li>
+											</Link>
+										))}
+									</ul>
+								</React.Fragment>
+							) : (
+								<NavLink
+									key={link.link}
+									text={link.text}
+									link={link.link}
+									path={path}
+								/>
+							)
+						)}
 					</ul>
 
 					<Button

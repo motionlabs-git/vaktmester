@@ -18,8 +18,8 @@ const EmblaSlide = ({
 		<div className='embla__slide'>
 			<div className='w-full h-full relative'>
 				<div className='absolute w-full h-full inset-0 flex justify-start items-end '>
-					<div className='w-full pt-20 heroOverlay'>
-						<div className=' px-4 md:px-0 md:pl-[5vw] pb-20 md:pb-[5vw] md:pt-10 md:max-w-9/10'>
+					<div className='w-full pt-20 heroOverlay bg-primary/45 md:bg-transparent'>
+						<div className=' px-4 md:px-0 md:pl-[5vw] pb-20 md:pb-[5vw] md:pt-10 md:max-w-9/10 '>
 							{h1 ? (
 								<h1 className='text-white max-w-6/10 md:text-nowrap'>
 									{title}
@@ -35,13 +35,13 @@ const EmblaSlide = ({
 
 							<div className='flex gap-4 mt-6 flex-wrap'>
 								<Button
-									className='text-base md:text-md'
+									className='text-sm md:text-base '
 									text='Ga til tjeneste'
 									link={link}
 								/>
 
 								<Button
-									className='text-base md:text-md'
+									className='text-sm md:text-base '
 									text='Kontakt oss'
 									link='/kontakt-oss'
 								/>

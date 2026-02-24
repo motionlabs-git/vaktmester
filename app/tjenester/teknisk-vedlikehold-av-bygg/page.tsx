@@ -17,7 +17,7 @@ const page = () => {
 	return (
 		<>
 			<PageHeading
-				image={'/images/vaktmester_bergen_roof_check.jpg'}
+				image={'/images/jerry_bulb_change.jpg'}
 				title={'Teknisk vedlikehold av bygg'}
 				text={
 					'Vi tilbyr pålitelig teknisk vedlikehold av bygg i Bergen, inkludert inspeksjoner, reparasjoner og forebyggende service. Målet vårt er å forhindre problemer før de oppstår og sikre at eiendommen fungerer trygt og effektivt.'
@@ -29,7 +29,9 @@ const page = () => {
 					<div className='flex-1'>
 						<Image
 							src={'/images/vaktmester_bergen_pilot.jpg'}
-							alt={'testimg'}
+							alt={
+								'Vaktmester Bergen - Teknisk vedlikehold av bygg'
+							}
 							width={800}
 							height={800}
 							className='object-cover w-full h-full aspect-square'

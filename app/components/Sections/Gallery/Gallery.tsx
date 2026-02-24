@@ -6,16 +6,52 @@ import { ChevronLeft, ChevronRight, Xmark } from '@gravity-ui/icons'
 
 const gallery = [
 	{
-		img: '/testimg.jpg',
-		title: 'Gressklipping i Bergen – velstelt plen etter profesjonell klipp',
+		img: '/images/gallery/1.jpg',
+		title: 'Renhold av bygg i Bergen – rengjøring av fellesområder',
 	},
 	{
-		img: '/testimg.jpg',
-		title: 'Gressklipping i Bergen – velstelt plen etter profesjonell klipp',
+		img: '/images/gallery/2.png',
+		title: 'Fasadevask i Bergen – profesjonelt vedlikehold av bygg',
 	},
 	{
-		img: '/testimg.jpg',
-		title: 'Gressklipping i Bergen – velstelt plen etter profesjonell klipp',
+		img: '/images/gallery/3.jpg',
+		title: 'Vaktmestertjenester i Bergen – vedlikehold av eiendom',
+	},
+	{
+		img: '/images/gallery/4.jpg',
+		title: 'Snørydding i Bergen – trygg adkomst til eiendom',
+	},
+	{
+		img: '/images/gallery/5.jpg',
+		title: 'Teknisk vedlikehold av bygg i Bergen',
+	},
+	{
+		img: '/images/gallery/6.jpg',
+		title: 'Rengjøring av inngangsparti i borettslag i Bergen',
+	},
+	{
+		img: '/images/gallery/7.jpg',
+		title: 'Utendørs vedlikehold av eiendom i Bergen',
+	},
+	{
+		img: '/images/gallery/8.jpg',
+		title: 'Renhold av trapperom i Bergen',
+	},
+	{
+		img: '/images/gallery/9.jpg',
+		title: 'Eiendomsservice i Bergen – vedlikehold av fellesarealer',
+	},
+	{
+		img: '/images/gallery/10.jpg',
+		title: 'Høytrykksspyling av uteområder i Bergen',
+	},
+	{
+		img: '/images/gallery/11.jpeg',
+		title: 'Vaktmester Bergen – regelmessig tilsyn av bygg',
+	},
+	{
+		img: '/images/gallery/12.jpg',
+		title: 'Vedlikehold av borettslag i Bergen',
 	},
 ]
 
