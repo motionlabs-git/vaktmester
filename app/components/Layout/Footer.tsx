@@ -20,20 +20,20 @@ const Footer = () => {
 						<Link
 							href={'/'}
 							aria-label='Vaktmester Bergen - Main page'
-							className='block w-60'
+							className='block w-60 md:w-70'
 						>
 							<Image
 								src={'/brand/logo.png'}
 								alt={'Vaktmester Bergen Logo'}
-								width={300}
-								height={200}
+								width={400}
+								height={300}
 								className='w-full'
 							/>
 						</Link>
 
 						<div>
 							<p className='font-bold'>
-								Vaktmester Bergen fra Plenklipperen
+								Vaktmester Bergen fra Plenklipperen.no AS
 							</p>
 
 							<Button
