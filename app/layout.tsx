@@ -12,6 +12,9 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
 	metadataBase: new URL('https://www.vaktmesterbergen.no'),
+	alternates: {
+		canonical: '/',
+	},
 	authors: [{ name: 'Motionlabs', url: 'https://motionlabs.cz' }],
 	title: {
 		default: `Vaktmester Bergen – Renhold og Vedlikehold av Bygg`,
