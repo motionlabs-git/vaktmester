@@ -33,7 +33,7 @@ const Footer = () => {
 
 						<div>
 							<p className='font-bold'>
-								Vaktmester Bergen fra Plenkliperen
+								Vaktmester Bergen fra Plenklipperen
 							</p>
 
 							<Button
