@@ -46,7 +46,7 @@ const MobileNavigation = ({
 
 			<div className='mt-10 flex-1 flex flex-col justify-between h-full'>
 				<div>
-					<ul className='items-center font-bold text-xl'>
+					<ul className='items-center font-bold text-lg'>
 						{NavigationLinks.slice(0, -1).map((link) =>
 							link.subLinks ? (
 								<React.Fragment key={link.link}>

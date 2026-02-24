@@ -30,7 +30,7 @@ const TjenesterCard = ({
 				</div>
 
 				<Button
-					className='text-base mt-4 justify-self-end'
+					className='text-sm md:text-base mt-4 justify-self-end'
 					text='Les mer'
 					link={link}
 				/>

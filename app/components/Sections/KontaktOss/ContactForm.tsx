@@ -72,7 +72,7 @@ const ContactForm = () => {
 				placeholder='Navn'
 			/>
 
-			<fieldset className='flex gap-2'>
+			<fieldset className='flex flex-col gap-4 lg:flex-row lg:gap-2'>
 				<Input
 					{...register('phone')}
 					error={errors.phone}

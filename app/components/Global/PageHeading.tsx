@@ -10,7 +10,7 @@ const PageHeading = ({
 	text: string
 }) => {
 	return (
-		<section className='!py-0 !block h-[60vh]'>
+		<section className='!py-0 !block h-[80vh] md:h-[60vh]'>
 			<div className='h-3/4 w-full select-none'>
 				<Image
 					src={image}

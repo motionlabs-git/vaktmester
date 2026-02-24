@@ -18,8 +18,8 @@ const EmblaSlide = ({
 		<div className='embla__slide'>
 			<div className='w-full h-full relative'>
 				<div className='absolute w-full h-full inset-0 flex justify-start items-end '>
-					<div className='w-full pt-20 heroOverlay bg-primary/45 md:bg-transparent'>
-						<div className=' px-4 md:px-0 md:pl-[5vw] pb-20 md:pb-[5vw] md:pt-10 md:max-w-9/10 '>
+					<div className='w-full pt-10 md:pt-20 heroOverlay bg-primary/45 md:bg-transparent'>
+						<div className=' px-4 md:px-0 md:pl-[5vw] pb-10 md:pb-[5vw] md:pt-10 md:max-w-9/10 '>
 							{h1 ? (
 								<h1 className='text-white max-w-6/10 md:text-nowrap'>
 									{title}
@@ -29,7 +29,7 @@ const EmblaSlide = ({
 									{title}
 								</p>
 							)}
-							<p className='mt-4 text-xl text-white  md:max-w-[60vw] xl:max-w-[40vw]'>
+							<p className='mt-4 text-base md:text-xl text-white  md:max-w-[60vw] xl:max-w-[40vw]'>
 								{text}
 							</p>
 
