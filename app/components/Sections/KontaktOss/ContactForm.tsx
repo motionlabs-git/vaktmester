@@ -7,11 +7,9 @@ import {
 	ContactFormSchema,
 } from '@/app/types/contact-form-schema'
 import { zodResolver } from '@hookform/resolvers/zod'
-import emailjs from '@emailjs/browser'
+import axios from 'axios'
 
 const ContactForm = () => {
-	const formRef = useRef<null | HTMLFormElement>(null)
-
 	const {
 		register,
 		handleSubmit,
@@ -23,42 +21,21 @@ const ContactForm = () => {
 		reValidateMode: 'onSubmit',
 	})
 
-	const onSubmit: SubmitHandler<ContactFormType> = async () => {
-		await emailjs.init({
-			publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-			blockHeadless: true,
-		})
-
+	const onSubmit: SubmitHandler<ContactFormType> = async (data) => {
 		try {
-			if (!formRef.current) {
-				throw new Error('missing form')
-			}
+			await axios.post('/api/v1/email', data).then((res) => {
+				if (res.status !== 200) {
+					setError('root', {
+						message: 'Something went wrong, try again later',
+					})
+				}
 
-			await emailjs
-				.sendForm(
-					process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-					process.env.NEXT_PUBLIC_EMAILJS_BOOKING_TEMPLATE_ID!,
-					formRef.current
-				)
-				.then(
-					() => {
-						reset()
-					},
-					(error) => {
-						setError('root', {
-							message: 'Something went wrong, try again later.',
-						})
-
-						console.log(error)
-
-						throw new Error(
-							'Something went wrong, try again later.',
-							error
-						)
-					}
-				)
-		} catch (e: unknown) {
-			if (e instanceof TypeError) setError('root', { message: e.message })
+				reset()
+			})
+		} catch (e) {
+			setError('root', {
+				message: 'Something went wrong, try again later',
+			})
 		}
 	}
 
@@ -88,6 +65,13 @@ const ContactForm = () => {
 				/>
 			</fieldset>
 
+			<Input
+				{...register('address')}
+				error={errors.address}
+				id='address'
+				placeholder='Adresse'
+			/>
+
 			<fieldset className='flex gap-2 mt-2'>
 				<span className='flex-1'>
 					<label htmlFor='message' className='required'>
@@ -110,12 +94,25 @@ const ContactForm = () => {
 				</span>
 			</fieldset>
 
+			{errors.root && (
+				<span className='text-sm mt-2 text-red-400'>
+					{errors.root.message}
+				</span>
+			)}
+
 			<button
+				aria-label='Submit form'
 				type='submit'
 				className={`text-nowrap self-center block w-fit h-fit bg-primary text-white font-bold py-[1em] px-[3em] hover:bg-primaryAccent duration-200`}
 			>
-				Send form
+				{isSubmitting ? 'Sender...' : 'Send forespørsel'}
 			</button>
+
+			{isSubmitSuccessful && (
+				<span className='text-base mt-2 text-primary text-center'>
+					Skjemaet er sendt inn, vi svarer så snart som mulig.
+				</span>
+			)}
 		</form>
 	)
 }

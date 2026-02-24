@@ -12,7 +12,6 @@ export const ContactFormSchema = z.object({
 		.optional(),
 	address: z.string().nullable(),
 	message: z.string().nonempty('Dette feltet er obligatorisk'),
-	// gdpr: z.literal<boolean>(true, 'Souhlas musí být udělen'),
 })
 
 export type ContactFormType = z.infer<typeof ContactFormSchema>

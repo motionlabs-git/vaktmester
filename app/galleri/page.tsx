@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Gallery from '../components/Sections/Gallery/Gallery'
 import PageHeading from '../components/Global/PageHeading'
+import FooterCTA from '../components/Layout/FooterCTA'
 
 export const metadata: Metadata = {
 	title: `Galleri | Utførte Oppdrag og Referanser`,
@@ -20,6 +21,8 @@ const page = () => {
 			/>
 
 			<Gallery />
+
+			<FooterCTA />
 		</>
 	)
 }
