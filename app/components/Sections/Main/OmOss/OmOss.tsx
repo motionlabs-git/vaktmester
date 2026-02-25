@@ -4,20 +4,20 @@ import Link from 'next/link'
 
 const OmOss = () => {
 	return (
-		<section className='relative flex justify-center'>
+		<section className='relative flex flex-col md:flex-row justify-center'>
 			<div className='w-full h-[80vh] pt-40 sm:pt-20'>
 				<Image
-					src={'/images/team2.jpg'}
+					src={'/images/vaktmester_bergen_hoytrikking2.jpeg'}
 					alt={'Vaktmester Bergen - Om oss'}
 					width={1200}
 					height={1000}
-					className='w-full h-full object-cover'
+					className='w-full h-full object-cover object-left'
 				/>
 			</div>
 
-			<div className='absolute inset-0 right-0 flex justify-center pt-12 '>
+			<div className='relative w-full md:absolute inset-0 right-0 flex justify-center md:pt-12 -translate-y-16'>
 				<div className='section-wrapper flex justify-end'>
-					<div className='whiteBox w-2xl h-fit p-10'>
+					<div className='whiteBox md:w-2xl h-fit p-10'>
 						<h3>Om oss</h3>
 
 						<p className='mt-6 text-darkGray'>
@@ -49,7 +49,7 @@ const OmOss = () => {
 							løsninger innen grønt vedlikehold i Bergen.
 						</p>
 
-						<div className='mt-6 flex gap-2'>
+						<div className='mt-6 flex flex-wrap gap-2'>
 							<Button
 								className={'text-base'}
 								text={'Les om oss'}
